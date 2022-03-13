@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/input_bg"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/textFirstChar"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/send_msg"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/online"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:background="@drawable/send_msg"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:visibility="gone"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/textFirstChar"
+        app:layout_constraintStart_toStartOf="@+id/viewSupporter" />
+
+    <View
+        android:id="@+id/viewSupporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/textFirstChar"
+        app:layout_constraintStart_toEndOf="@id/textFirstChar"
+        app:layout_constraintTop_toTopOf="@id/textFirstChar"/>
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="hello am thierry"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toTopOf="@id/viewSupporter"
+        app:layout_constraintStart_toEndOf="@id/textFirstChar" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="miendjem@gmail.com"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintStart_toEndOf="@id/textFirstChar"
+        app:layout_constraintTop_toBottomOf="@+id/viewSupporter" />
+
+
+</android.support.constraint.ConstraintLayout>

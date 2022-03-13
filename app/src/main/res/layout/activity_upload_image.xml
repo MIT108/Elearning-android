@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.course.UploadImage">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Input your File"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/firebaseimage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imagename"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="30dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:id="@+id/imagename"
+        android:background="@drawable/input_bg"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Enter Your File Name"
+        app:layout_constraintTop_toBottomOf="@+id/firebaseimage"
+        app:layout_constraintBottom_toTopOf="@+id/selectImagebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/selectImagebtn"
+        android:background="@drawable/send_msg"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Select You file"
+        app:layout_constraintTop_toBottomOf="@+id/imagename"
+        app:layout_constraintBottom_toTopOf="@+id/uploadimagebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/uploadimagebtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="Upload your file"
+        android:background="@drawable/send_msg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".student.course.UploadImage"-->
+<!--    >-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageID"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_margin="30dp"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:src="@drawable/business" />-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:id="@+id/imageNameET"-->
+<!--        android:hint="Enter image name"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:layout_below="@id/imageID"-->
+<!--        android:background="@drawable/input_bg"-->
+<!--        android:layout_marginHorizontal="30dp"-->
+<!--        android:layout_marginVertical="10dp"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@drawable/send_msg"-->
+<!--        android:onClick="selectImage"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:id="@+id/chooseBtn"-->
+<!--        android:text="Choose Image"-->
+<!--        android:layout_below="@id/imageNameET"-->
+<!--        android:layout_marginHorizontal="30dp"-->
+<!--        android:layout_marginVertical="10dp"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@drawable/send_msg"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:id="@+id/uploadBtn"-->
+<!--        android:text="Choose Image"-->
+<!--        android:layout_below="@id/chooseBtn"-->
+<!--        android:layout_marginHorizontal="30dp"-->
+<!--        android:onClick="uploadImage"-->
+<!--        android:layout_marginVertical="10dp"/>-->
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:src="@drawable/ic_back"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:id="@+id/back"-->
+<!--        android:text="Choose Image"-->
+<!--        android:layout_below="@id/uploadBtn"-->
+<!--        android:layout_marginHorizontal="30dp"-->
+<!--        android:onClick="goBack"-->
+<!--        android:layout_marginVertical="10dp"/>-->
+
+
+
+<!--</RelativeLayout>-->

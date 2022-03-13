@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "469989280446",
+    "firebase_url": "https://misceo-25fef-default-rtdb.firebaseio.com",
+    "project_id": "misceo-25fef",
+    "storage_bucket": "misceo-25fef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469989280446:android:f69b6c8e33efa76cde2cef",
+        "android_client_info": {
+          "package_name": "com.se3.elearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469989280446-mjbqfdbssqtshsfoba9mb4g2gn4sjvls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnOurUIgFBXj5BNgfssQmDoMrf85U3Ho8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469989280446-mjbqfdbssqtshsfoba9mb4g2gn4sjvls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

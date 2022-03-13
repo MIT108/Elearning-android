@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/_20sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.social.UploadVideoActivity">
+
+    <EditText
+        android:id="@+id/titleEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_bg"
+        android:hint="Enter Description"
+        android:inputType="textPersonName|textCapSentences"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@id/uploadViewBtn"
+        android:layout_below="@+id/titleEt"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/uploadViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Upload Video"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/send_msg"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pickVideoFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_video_white"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

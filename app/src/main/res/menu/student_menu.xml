@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_course"
+        android:icon="@drawable/document"
+        android:title="Course" />
+    <item
+        android:id="@+id/nav_test"
+        android:icon="@drawable/test"
+        android:title="Test" />
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat"
+        android:title="Chat Room" />
+
+    <item
+        android:id="@+id/nav_video"
+        android:icon="@drawable/video"
+        android:title="Live Chat" />
+    <item
+        android:id="@+id/nav_mark"
+        android:icon="@drawable/rank"
+        android:title="Mark" />
+
+</menu>
